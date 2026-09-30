@@ -1,4 +1,4 @@
-import time
+mport time
 import redis
 from flask import Flask
 
@@ -19,4 +19,4 @@ def get_hit_count():
 @app.route('/')
 def hello():
     count = get_hit_count()
-    return f'Hello Scott! This page has been viewed {count} times.\n'
+    return f'Hello Scott! This is my GitHub-tracked counter app, viewed {count} times.\n'
